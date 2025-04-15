@@ -1,0 +1,448 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  header css   */
+.cream-bg{
+   @apply bg-[#fff9f3];
+}
+
+.header-logo {
+    @apply w-[82px] mb-[15px] mr-[30px];
+   
+}
+.header-area{
+    @apply relative bg-[#fff9f3] z-10;
+}
+.fixed-layout{
+    @apply h-[75px] w-full fixed top-0 bottom-0 border-b border-b-[#e5e1e1]
+    bg-[#fff9f3] z-10;
+}
+.header {
+    @apply pt-5  pb-[5px];
+   
+    
+    
+}
+
+.header-wrap{
+    @apply flex justify-between items-center;
+    
+}
+
+.menu ul li a, .header-btns a {
+    @apply text-[#17134a] text-base mr-5 font-medium;
+}
+
+
+.menu ul  {
+    @apply flex;
+   
+}
+
+.menu ul li a:hover {
+    @apply text-[#3a30ba];
+}
+.dropdown{
+    @apply relative
+    
+     
+}
+.dropdown-btn svg{
+    @apply inline
+  
+}
+.dropdown-menu{
+    @apply rounded-[5px] py-0 left-0 top-full hidden flex-col invisible opacity-0 z-10 absolute p-0 bg-white whitespace-nowrap transition-all;
+}
+
+.dropdown-menu a {
+    @apply block py-2 px-4 text-base text-[#17134a] bg-white;
+   
+    
+  }
+
+  .dropdown-menu a:hover {
+    @apply bg-white;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    @apply flex visible opacity-100;
+  }
+
+.header-btns a {
+    @apply text-[#3a30ba] font-medium rounded-[5px] py-2 px-4 text-sm;
+}
+a.btn {
+    @apply border border-[#3a30ba] mr-0;
+   
+}
+
+
+/*  hero  area css   */
+
+.header-text {
+    @apply mt-[115px] pt-[145px] text-center;
+}
+.header-text h1 {
+    @apply text-[71px] font-bold text-[#17134a];
+}
+.header-text p{
+    @apply mt-5 -mb-2 pt-[6px] text-[22px] text-[#45426e];
+}
+.header-text ul {
+    @apply my-[25px];   
+}
+
+.header-text ul li svg, .transform-area-text ul li svg {
+    @apply w-[20px] h-[20px] mr-[5px] text-[#3a30ba];;
+}
+
+.header-text ul li {
+    @apply mr-[25px] inline-block items-center text-lg;   
+}
+
+.featured-list {
+    @apply flex items-center;
+}
+.featured-on{
+    @apply flex gap-10 gap-y-5 justify-center items-center flex-wrap mt-[30px];        
+}
+.featured-on span{
+    @apply font-medium text-base;
+}
+.header-text-btn a svg {
+    @apply w-[7px];
+}
+
+.header-text-btn a{
+    @apply bg-[#3a30ba] text-white font-medium py-4 px-8 text-lg leading-[1.5] flex items-center;
+}
+
+
+.header-text-btn {
+   @apply inline-flex;
+    
+}
+.btn-bg{
+    @apply py-[5px] mb-5;
+    
+}
+
+.header-text-btn a:hover {
+    @apply bg-[#12126e];
+}
+
+.featured-on img {
+    @apply h-[35px] ml-[25px];
+}
+.featured-on {
+    @apply flex justify-center flex-wrap mb-[30px];
+}
+
+.video-background{
+    @apply -mx-[15px] pt-[7px] pb-10 h-[560px];
+}
+
+.intro-video {
+    @apply  border-[20px] rounded-[36px] border-[#ffffff99] mb-[100px] pt-5 pb-[14px] px-5;
+   
+}
+.video-inner{
+    @apply rounded-[20px] h-[470px];
+}
+.video-btn{
+    @apply py-5 px-[30px] rounded-[10px] border-0 text-white leading-[18px] bg-[#8C3BFC] inline-block text-center;
+}
+.video-btn:hover{
+    @apply bg-[#27A6FE]
+}
+
+.our-member{
+    @apply z-10 pt-[30px] -mt-[150px] border-b border-b-[#080a471a];
+}
+.single-member-inner{
+    @apply py-[15px] px-5 text-center bg-white;
+}
+
+.member-image{
+    @apply flex justify-center;
+}
+.member-image img{
+    @apply object-cover h-[60px] w-[60px] rounded-full;
+}
+.member-text{
+    @apply text-center mb-[10px] mt-[18px];
+}
+.about-member p{
+    @apply text-sm mb-[14px];
+}
+
+.partner-area{
+    @apply mt-[50px];
+}
+.partners{
+    @apply flex gap-[50px] gap-y-[30px] justify-center items-center flex-wrap;
+}
+.partners img{
+    @apply object-cover h-[40px];
+    
+}
+
+.partners img.last-partner{
+    @apply h-[16px];
+}
+
+
+/* transform area css */
+.transform-area{
+    @apply mb-[60px] p-5 pt-10 rounded-[5px];    
+}
+
+.transform-area-inner {
+    @apply flex items-center justify-between -mx-5 mb-[50px];
+}
+
+.transform-area-text {
+    @apply pl-[40px] pr-5;
+}
+.transform-area-text h3{
+    @apply mb-5;
+}
+.transform-area-text p{
+    @apply text-xl mb-5;
+}
+.transform-lists li{
+    @apply flex font-medium items-center mb-2;
+}
+.transform-lists li svg{
+    @apply mr-[5px];
+}
+.transform-area-text a, .happy-user-text a, .pricing-title a{
+    @apply py-3 px-6 rounded-[5px] border border-[#5f54c7] bg-[#3a30ba] text-base text-white leading-[1.5] font-medium mt-[30px] inline-flex items-center;
+}
+
+.transform-area-text a svg, .happy-user-text a svg, .pricing-title a svg, .single-another-service-inner a svg, .footer-menu-inner a svg {
+    @apply w-[15px] leading-[15px] h-[12px] mt-[5px];
+}
+.transform-area-image {
+    @apply px-5;
+}
+.trasform-area-image-inner{
+    @apply py-[15px];
+}
+.transform-area-inner img{
+    @apply object-cover;
+}
+
+.transform-area-text ul {
+    @apply mb-[14px];
+}
+.border-line{
+    @apply pl-5 pb-5 mt-[30px];
+}
+.border-line hr {
+    @apply h-[1px] bg-[#e5e5f1] border-0;
+}
+
+.quality-icon {
+    @apply w-[30px];
+}
+
+.quality-area {
+    @apply flex justify-center;
+}
+
+.single-quality-area {
+    @apply w-[33.33%] p-5;
+}
+
+.single-quality-area svg{
+    @apply text-[#3a30ba];
+}
+
+.single-quality-area h6 {
+    @apply my-5;
+}
+.single-quality-area{
+    @apply text-lg;
+}
+
+/*  happy users area css */
+.happy-users{
+    @apply pt-[60px] pb-[100px] flex justify-between items-center;
+}
+.happy-user-text h2{
+    @apply mb-[30px];
+}
+
+
+/*  posibility css */
+.posibility-title h2{
+    @apply text-white mb-[30px];
+}
+.posibility-attributes{
+    @apply flex justify-between pb-20 pt-10 -mx-5;
+}
+.single-posibility-attributes{
+    @apply w-[33.33%] px-5;
+}
+.single-posibility-attributes-inner{
+    @apply py-[30px] px-[30px] bg-transparent border border-[#ffffff1a];
+}
+.attributes-up a{
+    @apply py-[10px] pl-0 rounded-[5px] text-2xl text-[#d1d0db] leading-[18px] font-medium;   
+}
+.attributes-up a:hover{
+    @apply text-white;
+}
+
+.attributes-bottom{
+    @apply text-[#a2a1b7] my-[5px];
+}
+.attributes-bottom a{
+    @apply text-[#fffc];
+}
+.attributes-bottom a span{
+    @apply underline decoration-[#0000ff];;
+}
+.attributes-bottom a span.attributes-bottom2{
+    @apply text-[#fcf2de];
+}
+
+
+/*  services area css   */
+.services-area, .another-services-area{
+    @apply pt-[120px] pb-20;
+}
+.service-title, .pricing-title{
+    @apply text-center;
+}
+.service-title p{
+    @apply text-2xl my-6;
+}
+
+.services{
+    @apply mt-[60px] pb-[50px] flex flex-wrap justify-center -mx-[25px];
+}
+.single-service{
+    @apply w-[33.33%] px-[25px];
+}
+.single-service-inner{
+    @apply mt-[15px] mb-[30px];
+}
+.single-service-inner h5{
+    @apply my-[18px];
+}
+
+
+/*  pricing araa css */
+.pricing-area{
+    @apply bg-[#fff9f3] pt-[120px] pb-[100px];
+}
+.pricing-title p{
+    @apply text-lg my-[18px];
+}
+.pricing-title a{
+    @apply mt-[10px];
+}
+
+
+/*  another services area   */
+
+.another-services{
+    @apply mt-[30px] py-[30px] flex justify-between -mx-5;
+}
+.single-another-service{
+    @apply w-[33.33%] px-5;
+}
+.single-another-service-inner{
+    @apply bg-[#f6f6fc] pt-[50px] pb-[30px] px-[30px] border-b-[3px] border-b-[#8c3bfc] rounded-[10px];
+}
+.single-another-service-inner.border2{
+    @apply border-b-[#de238e];
+}
+.single-another-service-inner.border3{
+    @apply border-b-[#ffcc85];
+}
+.single-another-service-inner a, .footer-menu-inner a.chat-btn{
+    @apply py-[10px] px-0 rounded-[5px] text-base text-[#17134a] leading-[18px] font-medium flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 0px;
+    background-color: transparent;
+    font-size: 16px;
+    color: #17134a;
+    line-height: 18px;
+    font-weight: 500;
+    transition: 300ms;
+    display: flex;
+}
+
+
+
+/*   footer-area  */
+.footer-area{
+    @apply bg-[#030521] pt-[120px] pb-[30px] mt-0 ;
+}
+.footer-upper{
+    @apply text-center;;
+}
+.footer-upper h2{
+    @apply text-white mb-10;
+}
+.footer-middle{
+    @apply mt-[8%] border-t border-b border-t-[#45426E] border-b-[#45426E] pt-[10px] pb-10 px-5 text-[#a2a1b7] text-base flex justify-between;
+}
+.footer-about{
+    @apply mt-[30px] mr-10;
+}
+.footer-logo img{
+    @apply object-cover w-[150px];
+}
+.footer-about p{
+    @apply mt-[30px] mb-4;
+}
+.footer-special-link{
+    @apply py-2 px-3 rounded-lg text-white bg-[#2b2b2b] border border-black font-medium flex items-center w-[260px];
+}
+.footer-special-link span{
+    @apply -mt-[1px] rounded-full w-4 h-4 min-w-4 bg-[#33b17e] block mr-2;
+}
+.footer-menu{
+    @apply mt-[30px];
+}
+.footer-menu-inner h6{
+    @apply text-white mb-[5px] uppercase;
+}
+.footer-menu .footer-menu-inner ul li a{
+    @apply inline-block mb-1;
+}
+.footer-menu-inner a svg {
+    @apply mt-0;
+}
+.footer-menu-inner ul li a:hover{
+    @apply text-white;
+}
+.footer-menu-inner p{
+    @apply text-[#d1d0db] my-[5px] text-sm;
+}
+
+.footer-menu-inner a.chat-btn{
+    @apply text-[#ffcc85];
+}
+
+.footer-menu-inner a.chat-btn:hover{
+    @apply text-white;
+}
+.footer-bottom{
+    @apply mt-[30px] text-sm text-[#a2a1b7] flex justify-between px-5;
+}
+
+
+.message-option{
+    @apply bg-[#3a30ba] h-[54px] w-[54px] rounded-full flex justify-center items-center fixed bottom-4 right-4;
+}
